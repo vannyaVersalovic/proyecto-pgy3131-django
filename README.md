@@ -8,6 +8,8 @@ Nota:
 
 Lo ideal es trabajar con la consola/bash/cmd/PowerShell de VSC (Siempre y cuando se utilice este IDLE)
 
+Tener en cuenta el cambio de versión de Python (Dentro de env\pyvenv.cfg), modificando la versión, ruta, etc.
+
 # Instalación y ejecución de Django
 
 1. **Instalar Python**
