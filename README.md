@@ -10,7 +10,6 @@ Lo ideal es trabajar con la consola/bash/cmd/PowerShell de VSC (Siempre y cuando
 
 Tener en cuenta el cambio de versión de Python (Dentro de env\pyvenv.cfg), modificando la versión, ruta, etc.
 
-
 Estructura principal:
 
 django/
@@ -42,6 +41,20 @@ django/
         ├── wsgi.py
         ├── db.sqlite3
         └── manage.py
+
+
+Cambios / Notas:
+
+1) Ordenamiento de diferentes archivos en sus respectivas carpetas (Imagenes, CSS y Js).
+2) Creación de env e implementación de Django (Revisar siempre django\paginaWeb\env\pyvenv.cfg para la versión y PATH de Python)
+3) Creación del folder "django" el cual contiene el proyecto: "proyectoPaginaWeb" y el ambiente (env) "paginaWeb".
+4) Dentro de proyectoPaginaWeb se encontrará otro proyectoPaginaWeb (Sí, me equivoque en eso xd). De preferencia, dejarlo así como está, para evitar manipulaciones o errores futuros, path: django\proyectoPaginaWeb\proyectoPaginaWeb.
+5) Dentro de django\proyectoPaginaWeb\proyectoPaginaWeb se encuentra:
+   1) \static
+      1) Este contiene: Js, img y CSS
+   2) \templates
+      1) Este contiene las VISTAS (ex .HTML's)
+   3) Lo fundamental acá es VERIFICAR SIEMPRE urls.py y views.py. Respectivamente: views.py -> Renderiza las vistas para que puedan ser visualizadas. Mientras que urls.py -> Asigna la ruta/dirección de cada vista DENOMINADA en views.py.
 
 # Instalación y ejecución de Django
 
