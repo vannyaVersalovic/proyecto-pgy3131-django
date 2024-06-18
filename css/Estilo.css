@@ -1,0 +1,154 @@
+/*-------------CARRITO-------------*/
+/* Estilos personalizados */
+.carrito-dropdown {
+    position: relative;
+    text-align: right;
+}
+
+.carrito-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.carrito-dropdown:hover .carrito-dropdown-content {
+    display: block;
+}
+
+.carrito-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.carrito_container{
+    padding: 10px;
+}
+
+.carrito-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.carrito-dropdown:hover .carrito-dropdown-content {
+    display: block;
+}
+
+.carrito-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+
+}
+#carritoBtn{
+    margin-left: 10px;
+   
+    
+}
+
+#iconCARRI{
+    font-size: 140%;
+
+}
+/*------------------------*/
+
+/* Estilos para la imagen al lado del título */
+.title-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+    width: 7vh; /* Ancho deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.imagen1 {
+    margin: 20px;
+}
+
+.imagen2 {
+    margin: 20px;
+}
+
+/*-------------INICIO SESION-------------*/
+
+ /*Letras y botones responsivos*/
+
+ .card-title{
+    font-size: 1.8vw;
+ }
+
+ .card-text{
+    font-size: 1.6vw;
+ }
+
+#boton{
+    font-size: 1.5vw;
+
+ }
+
+#botonIni{
+    font-size: 90%;
+}
+
+.col{
+    display: flex;
+    justify-content: right;
+    
+}
+
+#titulo{
+    font-size: 120%;
+}
+
+/*Contenedor de Carrito y Inicio sesion*/
+.container{
+    display: flex;
+    align-items: center;
+   position: relative;
+   left: 57%;
+}
+
+/*CARRUSEL XD*/
+#Carrusel{
+    width: 80%; 
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+
+/*sdklsdlks*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+gmpx-store-locator {
+  width: 80%;
+  height: 80%;
+  margin-left: 150px;
+
+  
+  --gmpx-color-surface: #fff;
+  --gmpx-color-on-surface: #212121;
+  --gmpx-color-on-surface-variant: #757575;
+  --gmpx-color-primary: #1967d2;
+  --gmpx-color-outline: #e0e0e0;
+  --gmpx-fixed-panel-width-row-layout: 28.5em;
+  --gmpx-fixed-panel-height-column-layout: 65%;
+  --gmpx-font-family-base: "Roboto", sans-serif;
+  --gmpx-font-family-headings: "Roboto", sans-serif;
+  --gmpx-font-size-base: 0.875rem;
+  --gmpx-hours-color-open: #188038;
+  --gmpx-hours-color-closed: #d50000;
+  --gmpx-rating-color: #ffb300;
+  --gmpx-rating-color-empty: #e0e0e0;
+}
