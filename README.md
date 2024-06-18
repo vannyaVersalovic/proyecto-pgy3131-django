@@ -4,6 +4,10 @@
 
 Habilitar (via PowerShell como administrador): **Set-ExecutionPolicy Unrestricted**
 
+Nota:
+
+Lo ideal es trabajar con la consola/bash/cmd/PowerShell de VSC (Siempre y cuando se utilice este IDLE)
+
 # Instalación y ejecución de Django
 
 1. **Instalar Python**
