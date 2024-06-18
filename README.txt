@@ -1,3 +1,7 @@
+# proyecto-pgy3131-django
+ Proyecto con implemtenación de framework Django.
+
+# Instalación y ejecución de Django
 1. **Instalar Python**
 
    - Descarga Python.
@@ -5,10 +9,10 @@
    - Nota: **SIEMPRE UTILIZAR UNA VERSIÓN DEFINIDA!!! En los pcs del Duoc puede variar.**
 2. **Crear un Entorno Virtual**
 
-   - Abre tu terminal (PowerShell en Windows).
-   - Navega a la carpeta donde deseas crear tu proyecto:
+   - Abrir PowerShell en Windows.
+   - Navega al folder donde se necesite crear el proyecto:
      ```bash
-     mkdir misProyectos
+     mkdir misProyectos (Si ha de ser necesario, ¿click derecho haters?)
      cd misProyectos
      ```
    - Crea el entorno virtual:
@@ -17,51 +21,48 @@
      ```
 3. **Activar el Entorno Virtual**
 
-   - En Windows:
+   -
      ```bash
      .\miEntorno\Scripts\activate
      ```
-   - En macOS/Linux:
-     ```bash
-     source miEntorno/bin/activate
-     ```
+
 4. **Instalar Django**
 
-   - Actualiza pip:
+   - Actualizar pip:
      ```bash
      python -m pip install --upgrade pip
      ```
-   - Crea un archivo `requirements.txt` con el contenido:
+   - Crear un archivo `requirements.txt` con el contenido:
      ```text
      django>=4.0
      ```
-   - Instala los paquetes:
+   - Instalar los paquetes:
      ```bash
      pip install -r requirements.txt
      ```
 5. **Crear un Proyecto Django**
 
-   - En la raíz de tu carpeta de proyectos:
+   - En la raíz de la carpeta de proyectos:
      ```bash
      django-admin startproject miProyecto
      cd miProyecto
      ```
 6. **Ejecutar el Servidor Local**
 
-   - Dentro de la carpeta de tu proyecto:
+   - Dentro de la carpeta del proyecto:
      ```bash
      python manage.py runserver
      ```
-   - Abre un navegador y ve a `http://127.0.0.1:8000/` para ver la página de inicio de Django.
+   - Abrir: `http://127.0.0.1:8000/` para ver la página de inicio de Django.
 7. **Crear una Aplicación en Django**
 
-   - Asegúrate de estar en la raíz del proyecto (donde está `manage.py`):
+   - Dentro de la carpeta raíz del proyecto (donde está `manage.py`) ejecutar:
      ```bash
      python manage.py startapp miApp
      ```
 8. **Registrar la Aplicación**
 
-   - Abre `settings.py` y agrega `'miApp'` a `INSTALLED_APPS`:
+   - Abrir `settings.py` y agregar `'miApp'` a `INSTALLED_APPS`:
      ```python
      INSTALLED_APPS = [
          ...
@@ -70,7 +71,7 @@
      ```
 9. **Configurar Rutas**
 
-   - En `miApp`, crea un archivo `urls.py` y agrega:
+   - En `miApp`, crear un archivo `urls.py` y agregar:
      ```python
      from django.urls import path
      from . import views
@@ -79,7 +80,7 @@
          path('', views.index, name='index'),
      ]
      ```
-   - En `urls.py` del proyecto (`miProyecto/urls.py`), incluye las rutas de `miApp`:
+   - En `urls.py` del proyecto (`miProyecto/urls.py`), incluír las rutas de `miApp`:
      ```python
      from django.urls import include, path
 
@@ -89,7 +90,7 @@
      ```
 10. **Crear una Vista**
 
-    - En `views.py` de `miApp`, agrega:
+    - En `views.py` de `miApp`, agregarr:
       ```python
       from django.http import HttpResponse
 
@@ -102,4 +103,4 @@
       ```bash
       python manage.py runserver
       ```
-    - Abre un navegador y ve a `http://127.0.0.1:8000/miApp/` para ver tu mensaje "Hola, mundo!".
+    - Ejecutar via: `http://127.0.0.1:8000/miApp/` .
