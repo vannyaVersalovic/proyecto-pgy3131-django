@@ -35,17 +35,21 @@ Lo ideal es trabajar con la consola/bash/cmd/PowerShell de VSC (Siempre y cuando
 4. **Instalar Django**
 
    - Actualizar pip:
+
      ```bash
      python -m pip install --upgrade pip
      ```
    - Crear un archivo `requirements.txt` con el contenido:
+
      ```text
      django>=4.0
      ```
    - Instalar los paquetes:
+
      ```bash
      pip install -r requirements.txt
      ```
+     (En su defecto usar: pip install django)
 5. **Crear un Proyecto Django**
 
    - En la raíz de la carpeta de proyectos:
