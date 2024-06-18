@@ -1,5 +1,8 @@
 # Ruta de este archvio proyectoPaginaWeb/proyectoPaginaWeb/views.py
 
+
+# Estas funciones harán el renderizado para visualizar las vistas en las 
+# respectivas URL (Indicadas en el README.md)
 from django.shortcuts import render
 
 def inicio(request):

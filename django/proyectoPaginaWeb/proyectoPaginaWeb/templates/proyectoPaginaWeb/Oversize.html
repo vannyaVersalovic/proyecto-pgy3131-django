@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/Estilo.css' %}">
     <link rel="icon" href="{% static 'img/Logo.png' %}">
     <!--Para el icono-->
@@ -13,9 +14,6 @@
     <script src="{% static 'js/main.js' %}" type="module"></script>
     <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library"></script>
     <title>Loquette Store</title>
-    <div class="container-map">
-      <script src="{% static 'js/main.js' %}"> </script>
-    </div>
 </head>
 <body>
     <!--Menu-->
@@ -76,7 +74,7 @@
                                     <form method="post">
                                         <div class="username">
                                             <label>Correo:</label><br>
-                                            <input type="email" placeholder="Ingrese su correo " required id="correo">
+                                            <input type="email" placeholder="Ingrese su correo" required id="correo">
                                         </div>
                                         <div class="username">
                                             <label>Contraseña:</label><br>
@@ -85,7 +83,6 @@
                                         <a href="#">¿Ha olvidado su contraseña?</a>
                                         <br>
                                         <a href="#">Registrarse</a>
-                                        <div class="registro"></div>
                                     </form>
                                 </div>
                             </div>
@@ -96,8 +93,10 @@
                     </div>
                 </div>
             </div>
+            <!--Fin modal-->
         </div>
     </nav>
+
     <!--Imagenes de Oversize-->
     <div class="imagen1">
         <div class="card" style="width: 20%; display: inline-block;">
@@ -105,7 +104,7 @@
             <div class="card-body">
                 <h5 class="card-title">Canguro</h5>
                 <p class="card-text">$12.000</p>
-                <form action="carrito.html">
+                <form action="{% url 'carrito' %}">
                     <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
                 </form>
             </div>
@@ -115,7 +114,7 @@
             <div class="card-body">
                 <h5 class="card-title">Camisa</h5>
                 <p class="card-text">$8.000</p>
-                <form action="carrito.html">
+                <form action="{% url 'carrito' %}">
                     <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
                 </form>
             </div>
@@ -125,7 +124,7 @@
             <div class="card-body">
                 <h5 class="card-title">Polera</h5>
                 <p class="card-text">$8.000</p>
-                <form action="carrito.html">
+                <form action="{% url 'carrito' %}">
                     <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
                 </form>
             </div>

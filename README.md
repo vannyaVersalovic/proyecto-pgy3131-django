@@ -1,4 +1,3 @@
-
 # Proyecto PGY3131 Django
 
 Este proyecto es una implementación del framework Django.
@@ -6,6 +5,7 @@ Este proyecto es una implementación del framework Django.
 ## Requisitos Previos
 
 Habilitar (via PowerShell como administrador):
+
 ```powershell
 Set-ExecutionPolicy Unrestricted
 ```
@@ -64,7 +64,7 @@ django/
 
 ### 1. Instalar Python
 
-- Descarga Python desde su [sitio oficial](https://www.python.org/downloads/).
+- Descarga Python.
 - Instalar la versión necesaria.
 - **Nota:** Utilizar siempre una versión definida, especialmente en los PCs del Duoc.
 
@@ -90,18 +90,23 @@ django/
 ### 4. Instalar Django
 
 - Actualizar pip:
+
   ```bash
   python -m pip install --upgrade pip
   ```
 - Crear un archivo `requirements.txt` con el siguiente contenido:
+
   ```text
   django>=4.0
   ```
 - Instalar los paquetes:
+
   ```bash
   pip install -r requirements.txt
   ```
+
   Alternativamente, usar:
+
   ```bash
   pip install django
   ```
@@ -214,8 +219,6 @@ La estructura del proyecto Django es crucial para una buena organización y mant
 - `db.sqlite3`: Base de datos SQLite.
 - `manage.py`: Herramienta de línea de comandos para interactuar con el proyecto Django.
 
-## Buenas Prácticas
-
 ### Uso de Entornos Virtuales
 
 El uso de entornos virtuales es una práctica recomendada para mantener las dependencias del proyecto aisladas y evitar conflictos con otras aplicaciones. Siempre activar el entorno virtual antes de trabajar en el proyecto.
@@ -232,34 +235,3 @@ Colocar las plantillas HTML dentro de la carpeta `templates` siguiendo una estru
 
 - `urls.py`: Asegurarse de que todas las rutas estén correctamente definidas y que incluyan las aplicaciones necesarias.
 - `views.py`: Verificar que las vistas están correctamente implementadas y renderizan las plantillas adecuadas.
-
-## Contribución
-
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-1. **Fork el repositorio**.
-2. **Clona tu fork**:
-   ```bash
-   git clone https://github.com/tu-usuario/proyecto-pgy3131-django.git
-   ```
-3. **Crea una rama** para tu característica o corrección:
-   ```bash
-   git checkout -b nombre-de-la-rama
-   ```
-4. **Realiza tus cambios** y realiza commits descriptivos:
-   ```bash
-   git commit -m "Descripción de los cambios"
-   ```
-5. **Envía tus cambios** al repositorio remoto:
-   ```bash
-   git push origin nombre-de-la-rama
-   ```
-6. **Crea un Pull Request** en GitHub.
-
-## Contacto
-
-Para cualquier duda o consulta, puedes contactarnos a través del correo [correo@ejemplo.com](mailto:correo@ejemplo.com).
-
----
-
-¡Gracias por tu interés en contribuir a este proyecto!
