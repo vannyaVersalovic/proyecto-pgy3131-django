@@ -22,3 +22,6 @@ def oversize(request):
 
 def videos(request):
     return render(request, 'proyectoPaginaWeb/Videos.html')
+
+def carrito(request):
+    return render(request, 'proyectoPaginaWeb/carrito.html')

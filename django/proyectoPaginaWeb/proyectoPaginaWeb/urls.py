@@ -29,4 +29,5 @@ urlpatterns = [
     path('nosotros/', views.nosotros, name='nosotros'),
     path('oversize/', views.oversize, name='oversize'),
     path('videos/', views.videos, name='videos'),
+    path('carrito/', views.carrito, name='carrito')
 ]

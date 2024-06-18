@@ -1,0 +1,47 @@
+
+paginaWeb/
+└── proyectoPaginaWeb/
+└── proyectoPaginaWeb/
+├── pycache/
+└── static/
+├── css/
+│   └── Estilo.css
+├── img/
+│   ├── 590a0e9162d2d78e08ea549d3b424264.png
+│   ├── 67473455738b95b34b15e34fb07b1c73.jpg
+│   ├── Camiseta-de-algodon-Oversized-Fit--Marron--H-M-CO.webp
+│   ├── ConjuntoGarden.webp
+│   ├── D-NQ-NP-993085-MPE49074184339-022022-W.jpg
+│   ├── Falda_insgra.jpg
+│   ├── Foto1.jpeg
+│   ├── Foto2.jpg
+│   ├── Foto3.jpeg
+│   ├── Foto4.webp
+│   ├── Foto5.webp
+│   ├── Foto6.webp
+│   ├── gengar_poleron.png
+│   ├── Logo.png
+│   ├── Nino.webp
+│   └── SAB00640230015084_det_2_03130140.jpg
+└── js/
+├── js_api2.js
+├── js_localstorage.js
+├── js_main.js
+└── js_validacion.js
+└── templates/
+└── proyectoPaginaWeb/
+├── Hombre.html
+├── Infantil.html
+├── Inicio.html
+├── Mujer.html
+├── Nosotros.html
+├── Oversize.html
+└── Videos.html
+
+{% extends '   ' %}
+
+{% load static %}
+
+{% block title %} Loquette Store {% endblock %}
+
+{% block content %}
