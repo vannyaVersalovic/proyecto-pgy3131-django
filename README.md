@@ -1,7 +1,11 @@
 # proyecto-pgy3131-django
+
  Proyecto con implemtenación de framework Django.
 
+Habilitar (via PowerShell como administrador): **Set-ExecutionPolicy Unrestricted**
+
 # Instalación y ejecución de Django
+
 1. **Instalar Python**
 
    - Descarga Python.
@@ -21,11 +25,9 @@
      ```
 3. **Activar el Entorno Virtual**
 
-   -
-     ```bash
+   - ```bash
      .\miEntorno\Scripts\activate
      ```
-
 4. **Instalar Django**
 
    - Actualizar pip:
