@@ -10,6 +10,39 @@ Lo ideal es trabajar con la consola/bash/cmd/PowerShell de VSC (Siempre y cuando
 
 Tener en cuenta el cambio de versión de Python (Dentro de env\pyvenv.cfg), modificando la versión, ruta, etc.
 
+
+Estructura principal:
+
+django/
+└── paginaWeb/
+    ├── include/
+    ├── lib/
+    └── Scripts/
+        └── pyvenv.cfg
+└── proyectoPaginaWeb/
+    └── proyectoPaginaWeb/
+        ├── __pycache__/
+        ├── static/
+        │   ├── css/
+        │   ├── img/
+        │   └── js/
+        └── templates/
+            └── proyectoPaginaWeb/
+                ├── Hombre.html
+                ├── Infantil.html
+                ├── Inicio.html
+                ├── Mujer.html
+                ├── Nosotros.html
+                ├── Oversize.html
+                └── Videos.html
+        ├── __init__.py
+        ├── asgi.py
+        ├── settings.py
+        ├── urls.py
+        ├── wsgi.py
+        ├── db.sqlite3
+        └── manage.py
+
 # Instalación y ejecución de Django
 
 1. **Instalar Python**
